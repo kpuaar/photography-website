@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 5 Project</title>
+      <meta charset="utf-8">
+
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+</head>
+    
+<body>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">K.Puaar</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="../Day5Project.htmlD">Home</a></li>
+            <li><a href="../Products.html">Products</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="">Working Area <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../Circle.html">Circle</a></li>
+                  <li><a href="../Rectangle.html">Rectangle</a></li>
+                  <li><a href="../Triangle.html">Triangle</a></li>
+                </ul>
+            </li>
+            <li><a href="../Calculator.html">Calculator</a></li>
+            <li><a href="../About.html">About Us</a></li>
+            <li><a href="../Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+  
+    <div class="container">
+                <center>
+                <h3>Beetle</h3>
+                    <br>
+                    <img src="../../Images/Beetle.jpg" width="450" height="600">
+                </center>
+                <br>
+                <dl class="dl-horizontal">  
+                    <dt>Name</dt>
+                    <dd>Beetle</dd>
+                </dl>
+                <dl class="dl-horizontal">  
+                    <dt>Location</dt>
+                    <dd>Solihull</dd>
+                </dl>
+                <dl class="dl-horizontal">
+                    <dt>Description</dt>
+                    <dd>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</dd>
+                </dl>
+    <br><br>
+            </div>
+
+        
+        <div id="map">
+            <script>
+                function initMap() {
+                    var myLatLng = {lat: 52.373, lng: -1.753};
+
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 13,
+                        center: myLatLng,
+                        scrollwheel: false,
+                        navigationControl: false,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        draggable: true,
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
+            </script>
+        </div>
+        
+            
+    <br><br>
+    
+    <div class="container">
+        <center><h3>Prices and Sizes</h3></center>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <th></th>
+                <th></th>
+                <th>Sizes</th>
+                <th>Prices</th>
+            </thead>
+            <tr>
+                <th></th>
+                <th>Medium</th>
+                <th>1800 × 1200px / 25 × 16.6" @72dpi</th>
+                <th>$25</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Large</th>
+                <th>2400 × 1600px / 16.6 × 11.1" @144dpi</th>
+                <th>$50</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>X-Large</th>
+                <th>5184 × 3456px / 17.2 × 11.5" @300dpi</th>
+                <th>$150</th>
+            </tr>
+        </table>
+        <center>  
+            <a href="../../Images/2016-01-03%2002.16.10%202.jpg" download>
+        <button type="button" class="btn btn-primary btn-lg">Download <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
+                </a>
+        </center>
+        
+    </div>
+    
+    <br><br>
+</body>
+<footer>
+    
+    <p>K.Puaar</p>
+    
+</footer>    
+</html>

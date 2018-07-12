@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>K.Puaar | Birmingham</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="K.Puaar">
+
+
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Project 2 - Photography Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Trips.html">Trips
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About this Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    
+<!-- Page Content -->
+<section class="py-5">
+    
+        <div class="container">
+                    <br>
+                <h2>Birmingham</h2>
+                    <br>
+            <p>
+                <span style="color:red">
+                    //TODO: Write a description of the trip
+                </span>
+            </p>
+            
+        <p>BT Tower w/ Fog
+            -
+            <br><br>
+            Digbeth w/Lights 
+            -
+        </p>                
+            <br>
+
+            <!-- Images -->
+        <center>    
+            <figure class="figure">
+                <img src="images/birmingham/Bt_tower.jpg" height="50%" width="50%">
+                <figcaption class="figure-caption">BT Tower</figcaption>
+            </figure>    
+             
+            <figure class="figure">
+                <img src="images/birmingham/Building.JPG" height="50%" width="50%">
+                <figcaption class="figure-caption">Architecturaly Pleasing</figcaption>
+            </figure>
+        </center>                
+            
+        <p>Building
+            -
+            <br><br>
+            HOTEL
+            -
+        </p>
+            <center>    
+ 
+            <figure class="figure">
+                <img src="images/birmingham/Digbeth_lights.JPG" height="50%" width="50%">
+                <figcaption class="figure-caption">Digbeth Dinning Club</figcaption>
+            </figure>    
+            
+            <figure class="figure">
+                <img src="images/birmingham/Hotel.jpg" height="50%" width="50%">
+                <figcaption class="figure-caption">Hotel</figcaption>
+            </figure>    
+          
+                </center>                
+    </div>
+    
+        <div id="map">
+            <script>
+                function initMap() {
+                    var myLatLng = {lat: 52.478, lng: -1.895};
+                    
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 12,
+                        center: myLatLng,
+                        scrollwheel: false,
+                        navigationControl: false,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        draggable: true,
+                    });
+
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                }
+            </script>
+        </div>
+            
+    <br>
+    
+    <div class="container">
+        <center>
+            <h3>Prices and Sizes</h3>
+            <br>
+            
+            <table class="table">
+                
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th>Sizes</th>
+                    <th>Prices</th>
+                </thead>
+                
+                <tr>
+                    <th></th>
+                    <th>Medium</th>
+                    <th>1800 × 1200px</th>
+                    <th>$25</th>
+                    <th>
+                        <label class="form-check-label">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                    </th>
+                </tr>
+                
+                <tr>
+                    <th></th>
+                    <th>Large</th>
+                    <th>2400 × 1600px</th>
+                    <th>$50</th>
+                    <th>
+                        <label class="form-check-label">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                    </th>
+                </tr>
+                
+                <tr>
+                    <th></th>
+                    <th>X-Large</th>
+                    <th>5184 × 3456px</th>
+                    <th>$75</th>
+                    <th>
+                        <label class="form-check-label">
+                            <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+                        </label>
+                    </th>
+                </tr>
+            </table>
+        
+            <p>
+                <span style="color:red">
+                    //TODO: Need to add a a way to download/buy your selected sizes
+                </span>
+            </p>
+        
+        </center>
+        
+        
+        
+        <center>  
+            <a href="../../Images/2016-01-03%2002.16.10%202.jpg" download>
+                <button type="button" class="btn btn-primary btn-lg">
+                    Download
+                </button>
+            </a>
+        </center>
+        
+    </div>
+        
+</section>
+
+    
+</body>
+<footer> <!-- Start Of Footer -->
+    <div class="row">
+        <div class="col-md-3">
+            <h2>Project 2</h2>
+            <address>
+                <strong>K.Puaar</strong><br>
+                Software Developer<br>
+                <a href="mailto:kieranpuaar@gmail.com">Kieranpuaar@gmail.com</a><br>
+                <abbr title="Phone">M: </abbr>07824 665176
+            </address>
+            <p>© 2017 K.Puaar, All rights reserved</p>
+        </div>
+
+        <div class="col-md-6" style="border-left:1px solid #cecccc; height:200px">
+            <h4>Other Projects </h4>
+            <div class="col-md-8">
+                <ul class="pages">
+                    <li><a href="">Project 1 - Website using play and scala</a></li>
+                    <li><a href="index.html">Project 2 - Photography Website</a></li>
+                    <li><a href="">Project 3 - Scala Chat Application</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <ul class="pages">
+                    <li><a href="">Project 4 - Migration</a></li>
+                    <li><a href="">Project 5 - Enrolments</a></li>
+                    <li><a href="">Project 6 - /////</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2" style="border-left:1px solid; height:200px">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <!--facebook color #3b5998 -->
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <!--twitter color #00aced -->
+                <li><a href="https://www.linkedin.com/in/kieran-p-69b57aa6/">Linkedin</a></li>
+                <!--linkedin color #007bb6 -->
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+                <!--youtube color #bb0000 -->
+            </ul>
+        </div>
+    </div>
+</footer> <!-- End Of Footer -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
